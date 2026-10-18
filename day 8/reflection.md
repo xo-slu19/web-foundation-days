@@ -1,0 +1,7 @@
+# Day 8 Reflection
+
+The most difficult concept in the course was connecting capacity estimates to a complete architecture. Calculating average and peak traffic was manageable, but I had to think more carefully about what happens when many requests arrive at once, when a cache is stale, or when two users try to change the same data. I overcame this by breaking the design into parts, tracing the request flows step by step, and explaining what each component does and what happens if it fails.
+
+Based on the feedback on my photo-app scaling capstone, I would improve how I check that a design document is complete before submitting it. My earlier draft had strong traffic and storage calculations, but important sections such as the architecture diagram, component explanations, upload lifecycle, and trade-offs were missing from the submitted version. I would now use the assignment requirements as a checklist, review the entire rendered Markdown file on GitHub, and confirm that the final commit contains every section. I would also make the relationship between each calculation and the architecture more explicit.
+
+Next, I want to learn more about database transactions and concurrency, especially how row locks, unique constraints, idempotency keys, and payment reconciliation work in a real ticketing system. I would also like to practise load testing and monitoring so I can compare estimated traffic with measured performance. These skills would help me design systems that are not only scalable on paper but also reliable under real-world pressure.
